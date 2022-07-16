@@ -1,10 +1,10 @@
 name: Build/release
 
-on: push
+on: workflow_dispatch
 
 jobs:
   release:
-    runs-on: ${{ matrix.os }}
+    runs-on: windows-2019
 
     strategy:
       matrix:
