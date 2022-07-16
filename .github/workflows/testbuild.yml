@@ -6,11 +6,6 @@ jobs:
   release:
     runs-on: windows-2019
 
-    strategy:
-      matrix:
-        #os: [macos-latest, ubuntu-latest, windows-latest]
-        os: [macos-latest, windows-2019, ubuntu-latest]
-
     steps:
       - name: Check out Git repository
         uses: actions/checkout@v1
